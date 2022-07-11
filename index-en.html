@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <title>Holy Taco Speisekarte</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Holy Taco Online Speisekarte">
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <header class="main-header">
+            <p><a href="./index.html" title="Deutsch">Deutsch</a></p><img src="data:image/png;base64,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"
+                alt="Holy Taco Logo">
+            <h1>Menu</h1>
+            <div class="container">
+                <p id="menu-switch" class="aligncenter"><a href="./drinks-en.html" class="btn standard icon" title="To Drinks"><img src="./media/drink.svg" alt="Drink Icon">To Drinks</a></p>
+            </div>
+        </header>
+        <div id="main">
+            <div class="container">
+                <div>
+                    <div class="menu-wrapper">
+                        <div class="menu-item">
+                            <h2>
+                                ANTOJITOS<br />
+                                MEXICAN TAPAS
+                            </h2>
+                            <p></p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Tostada Vegetariana</span><span class="product-mark">VEGGIE</span>
+                                        <div class="product-price">| 5.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                Crunchy corn tortilla with avocado, refried beans, white cheese, iceberg lettuce, sour cream and homemade salsa macha. <small style="font-size: 10px;">(1), E, G</small><br />
+                                                <strong>Two Tostadas</strong> | 9.90€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">TOSTADA DE ATUN</span>
+                                        <div class="product-price">| 6.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                Fresh tuna marinated in nikkei sauce with avocado, fine strips of leek, cucumber, sesame and aji chili salsa on a crunchy corn tortilla.
+                                                <small style="font-size: 10px;">(1), E, F, J, K, N</small><br />
+                                                <strong>Two Tostadas</strong> | 11.90€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Quesadilla</span><span class="product-mark">VEGGIE</span>
+                                        <div class="product-price">| 9.50€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                Flour-tortilla filled with mexican oaxaca cheese, mozzarella and cheddar. <small style="font-size: 10px;">(1), A, G, M</small><br />
+                                                <strong>Extra champignons</strong> | 1,50€<br />
+                                                <strong>Extra homemade Chorizo</strong> | 1,90€
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Holy Guacamole</span><span class="product-mark">VEGAN</span>
+                                        <div class="product-price">| 9.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Avocado-Mash with onions, tomatoes and coriander. In addition Totopos (Tortilla-Crisps).</span></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title"><span class="product-title">ENCHILADAS DE MOLE</span></div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                <strong>With Champignons <span>VEGGIE</span></strong> | 10.90€<br />
+                                                <strong>With Pulled-Chicken</strong> | 11.90€<br />
+                                                <strong>With Carnitas (Pulled-Pork)</strong> | 12.50€<br />
+                                                <br />
+                                                Two corn tortillas with homemade mole made from 25 ingredients (including dark chocolate, chile ancho, chile mulato, chile guajillo, chile pasilla, cloves, walnuts, peanuts, ginger, almonds
+                                                and cinnamon). Served with some sour cream and cheese. <small style="font-size: 10px;">(1), A, G, M</small><br />
+                                                <br />
+                                                <p>Our corn tortillas, tostadas and tacos are gluten free!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h2>TACOS CLASICOS</h2>
+                            <p></p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Coliflor Al Mojo De Ajo</span><span class="product-mark">VEGAN</span>
+                                        <div class="product-price">| 4.20€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Roasted cauliflower tossed in herb garlic oil. Served with our homemade peanut and chilli macha salsa.</span><small class="product-additives"> E, K, L</small></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Tinga De Pollo</span>
+                                        <div class="product-price">| 4.50€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Pulled chicken in a fruity tomato chipotle chili salsa with avocado cream, fresh onions and coriander.</span><small class="product-additives"> L</small></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Carnitas</span>
+                                        <div class="product-price">| 4.70€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>Pulled-Pork Mexico City style. Cooked slowly in lard and orange-juice, topped with grandma Juana´s legendary pickled onions and coriander.</span><small class="product-additives"> C</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Suadero</span>
+                                        <div class="product-price">| 4.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Tender brisket of beef, braised and seared, with avocado cream, fresh onions and coriander.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h2>TACOS ESPECIALES</h2>
+                            <p></p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Mole Vegan</span><span class="product-mark">VEGAN</span>
+                                        <div class="product-price">| 4.70€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                Carrots and sweet potatoes simmered in honey and olive oil in a homemade Mexican mole made from 25 ingredients (including dark chocolate, chile ancho, chile mulato, chile guajillo, chile
+                                                pasilla, cloves, walnuts, peanuts, ginger, almonds and cinnamon).
+                                            </span>
+                                            <small class="product-additives"> E, G, H, K</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Campechano</span>
+                                        <div class="product-price">| 5.20€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Stewed beef and homemade chorizo with fresh onions and coriander.</span></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">LANGOSTINOS ENDIABLADOS</span>
+                                        <div class="product-price">| 5.30€</div>
+                                        <span class="product-spice"><img src="./media/chili.svg" alt="Spice Level" /><img src="./media/chili.svg" alt="Spice Level" /></span>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description">
+                                            <span>
+                                                Black Tiger Prawns marinated in our homemade chipotle-adobo salsa. Additionally white and red cabbage in stripes with chipotle-mayonaise. <small style="font-size: 10px;">B, C</small><br />
+                                                <br />
+                                                <p>Our corn tortillas, tostadas and tacos are gluten free!</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h2>
+                                Fiesta Mexicana<br />
+                                SHARING PLATES
+                            </h2>
+                            <p>Three Taco stuffings of your choice*. Plus fresh onions, coriander, limes, various salsas und tortillas. *Except Langostinos Endiablados</p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">For 6 Amigos<br /></span><span class="product-mark">ca. 24 Tacos</span>
+                                        <div class="product-price">| 89.00€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">For 9 Amigos<br /></span><span class="product-mark">ca. 36 Tacos</span>
+                                        <div class="product-price">| 109.00€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h2>Extras</h2>
+                            <p></p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Salsa Macha</span><small class="product-additives"> E</small>
+                                        <div class="product-price">| 2.20€</div>
+                                        <span class="product-spice"><img src="./media/chili-off.svg" alt="Spice Level" /></span>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Salsa JALAPEÑO</span><small class="product-additives"> I, J</small>
+                                        <div class="product-price">| 2.20€</div>
+                                        <span class="product-spice"><img src="./media/chili.svg" alt="Spice Level" /></span>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Salsa Chipotle</span><small class="product-additives"> H, I, J</small>
+                                        <div class="product-price">| 2.20€</div>
+                                        <span class="product-spice"><img src="./media/chili.svg" alt="Spice Level" /><img src="./media/chili.svg" alt="Spice Level" /></span>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Salsa Habanero</span><small class="product-additives"> I, J</small>
+                                        <div class="product-price">| 2.20€</div>
+                                        <span class="product-spice">
+                                            <img src="./media/chili.svg" alt="Spice Level" /><img src="./media/chili.svg" alt="Spice Level" /><img src="./media/chili.svg" alt="Spice Level" />
+                                        </span>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Pico De Gallo</span>
+                                        <div class="product-price">| 3.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Bohnenmus</span>
+                                        <div class="product-price">| 2.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h2>Postres</h2>
+                            <p></p>
+                            <div class="products-wrapper">
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">MUY CHOCOLATE</span>
+                                        <div class="product-price">| 4.50€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Two scoops of chocolate ice cream with hot chocolate sauce.</span><small class="product-additives"> G</small></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">FLAN CON CAJETA</span>
+                                        <div class="product-price">| 4.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Flan with Mexican caramel sauce.</span><small class="product-additives"> C, G</small></div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">HELADO AL PASTOR</span><span class="product-mark">VEGAN</span>
+                                        <div class="product-price">| 5.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Vegan vanilla ice cream with roasted pineapple and a touch of chili.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./drinks-en.html" class="menuSwitch"><img src="./media/drink.svg" alt="Drinks" /></a>
+        </div>        
+        <footer class="main-footer">
+            <div class="container">
+                <ul class="menu social-nav">
+                    <li>
+                        <a href="https://www.facebook.com/holytacohamburg/" target="_blank" title="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Facebook</title>
+                                <path
+                                    fill="#ffffff"
+                                    d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                                    fill-rule="evenodd"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/holytacohamburg/" target="_blank" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Instagram</title>
+                                <path
+                                    fill="#ffffff"
+                                    d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                                ></path>
+                                <path fill="#ffffff" d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.holy-taco.de/" target="_blank" title="Webseite">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Globe</title>
+                                <path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                                <path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+                                <path
+                                    d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="32"
+                                ></path>
+                                <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <p>
+                    <small>
+                        <span>
+                            <strong>(1)</strong> mit Konservierungsstoff, <strong>(2)</strong> mit Farbstoff, <strong>(3)</strong> mit Antioxidationsmittel, <strong>(4)</strong> mit Süßungsmittel Saccharin, <strong>(5)</strong> mit Süßungsmittel
+                            Cyclamat, <strong>(6)</strong> mit Süßungsmittel Aspartam, <strong>(7)</strong> mit Süßungsmittel Acesulfan <strong>(8)</strong> mit Phosphat, <strong>(9)</strong> geschwefelt, <strong>(10)</strong> chininhaltig,
+                            <strong>(11)</strong> koffeinhaltig, <strong>(12)</strong> mit Geschmacksverstärker, <strong>(13)</strong> geschwärzt, <strong>(14)</strong> gewachst, <strong>(15)</strong> gentechnisch verändert,
+                            <strong>A</strong> Glutenhaltiges Getreide, <strong>B</strong> Krebstiere und daraus gewonnene Erzeugnisse, <strong>C</strong> Eier und daraus gewonnene Erzeugnisse, <strong>D</strong> Fische und daraus gewonnene
+                            Erzeugnisse, <strong>E</strong> Erdnüsse und daraus gewonnene Erzeugnisse, <strong>F</strong> Soja(bohnen) und daraus gewonnene Erzeugnisse, <strong>G</strong> Milch und daraus gewonnene Erzeugnisse,
+                            <strong>H</strong> Schalenfrüchte, <strong>I</strong> Sellerie und daraus gewonnene Erzeugnisse, <strong>J</strong> Senf und daraus gewonnene Erzeugnisse, <strong>K</strong> Sesamsamen und daraus gewonnene Erzeugnisse,
+                            <strong>L</strong> Schwefeldioxid und Sulphite, <strong>M</strong> Lupinen und daraus gewonnene Erzeugnisse, <strong>N</strong> Weichtiere und daraus gewonnene Erzeugnisse
+                        </span>
+                    </small>
+                </p>
+            </div>
+            <ul>
+                <li><a href="https://www.holy-taco.de/impressum/" title="Imprint" target="_blank">Imprint</a></li>
+                <li><a href="https://www.holy-taco.de/datenschutz/" title="Privacy Policy" target="_blank">Privacy Policy</a></li>
+            </ul>
+        </footer>        
+    </main>
+    <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="LyXfqQU2X"></script>
+    <script src="./js/masonry.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
