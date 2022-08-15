@@ -7,6 +7,8 @@
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Holy Taco Online Speisekarte">
     <link href="./style.css" rel="stylesheet"/>
+    <link href="./swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="./menu.min.css" rel="stylesheet"/>
 </head>
 <body>
     <main>
@@ -18,11 +20,30 @@
                 <p id="menu-switch" class="aligncenter"><a href="./index-en.html" class="btn standard icon" title="Menu"><img src="./media/taco.svg" alt="Drink Icon">To Menu</a></p>
             </div>
         </header>
+        <nav id="menu">
+            <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#margaritas" title="Margaritas">Margaritas</a></div>
+                        <div class="swiper-slide"><a href="#cocktails" title="Cocktails">Cocktails</a></div>
+                        <div class="swiper-slide"><a href="#cocktails" title="Longdrinks">Longdrinks</a></div>
+                        <div class="swiper-slide"><a href="#cervezas" title="Cervezas">Cervezas</a></div>
+                        <div class="swiper-slide"><a href="#vinoBlanco" title="Vino">Vino</a></div>
+                        <div class="swiper-slide"><a href="#mezcales" title="Mezcales">Mezcales</a></div>
+                        <div class="swiper-slide"><a href="#tequila" title="Tequilas">Tequilas</a></div>
+                        <div class="swiper-slide"><a href="#shots" title="Shots">Shots</a></div>
+                        <div class="swiper-slide"><a href="#softdrinks" title="Softdrinks">Softdrinks</a></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </nav>
         <div id="main">
             <div class="container">
                 <div>
                     <div class="menu-wrapper">
-                        <div class="menu-item">
+                        <div id="aperitif" class="menu-item">
                             <h2>Aperitif</h2>
                             <p></p>
                             <div class="products-wrapper">
@@ -33,34 +54,20 @@
                                     </div>
                                     <div class="product-size">
                                         <span class="product-mark">100ml</span>
-                                        <div class="product-price">| 6.90€</div>
+                                        <div class="product-price">| 7.90€</div>
                                     </div>
                                     <div class="product-size">
                                         <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 39.00€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Crémant De Loire Blanc</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Chenin Blanc</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">100ml</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 39.00€</div>
+                                        <div class="product-price">| 45.00€</div>
                                     </div>
                                 </div>
                                 <div class="product-item">
                                     <div class="menu-title">
-                                        <span class="product-title">Sparkling Ginger</span>
-                                        <div class="product-price">| 7.90€</div>
+                                        <span class="product-title">Aperol Spritz</span>
+                                        <div class="product-price">| 8.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Crémant Blanc, Ginger Ale</span><small class="product-additives"> L</small></div>
+                                        <div class="menu-description"><span>Aperol, Crémant Blanc</span></div>
                                     </div>
                                 </div>
                                 <div class="product-item">
@@ -72,9 +79,18 @@
                                         <div class="menu-description"><span>Crémant Rosé, Pink Grapefruit</span><small class="product-additives"> L</small></div>
                                     </div>
                                 </div>
+                                <div class="product-item">
+                                    <div class="menu-title">
+                                        <span class="product-title">Sparkling Ginger</span>
+                                        <div class="product-price">| 7.90€</div>
+                                    </div>
+                                    <div class="menu-description-wrapper">
+                                        <div class="menu-description"><span>Crémant Blanc, Ginger Ale</span><small class="product-additives"> L</small></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="menu-item">
+                        <div id="margaritas" class="menu-item">
                             <h2>Margaritas</h2>
                             <p></p>
                             <div class="products-wrapper">
@@ -84,7 +100,12 @@
                                         <div class="product-price">| 11.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Triple Sec, Limettensaft, Himalaya Salzrand</span></div>
+                                        <div class="menu-description">
+                                            <span>
+                                                Tequila Blanco, Triple Sec, Limettensaft, Himalaya Salzrand<br/>
+                                                <strong>Als Mezcalita mit Mezcal</strong> | 1.50€
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
@@ -93,7 +114,12 @@
                                         <div class="product-price">| 11.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Reposado, Limettensaft, Agavendicksaft, Himalaya Salzrand</span></div>
+                                        <div class="menu-description">
+                                            <span>
+                                                Tequila Reposado, Limettensaft, Agavendicksaft, Himalaya Salzrand<br/>
+                                                <strong>Als Mezcalita mit Mezcal</strong> | 1.50€
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
@@ -102,41 +128,19 @@
                                         <div class="product-price">| 11.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Triple Sec, Limettensaft, Ananassaft, Chili, Agavendicksaft, Koriander Salzrand</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mezcalita</span>
-                                        <div class="product-price">| 11.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Mezcal Joven, Triple Sec, Limettensaft, Agavendicksaft, Hawaii Salzrand</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Coyote Mezcalita</span>
-                                        <div class="product-price">| 11.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Mezcal Joven, Mozart Chocolate, Vanille de Madagascar, Limettensaft, Tonkabohnen, Hawaii Salzrand</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Infierno</span>
-                                        <div class="product-price">| 11.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Reposado, Framboise De Ronce, Ancho Reyes Likör, Limettensaft, Hawaii Salzrand</span></div>
+                                        <div class="menu-description">
+                                            <span>
+                                                Tequila Reposado, Triple Sec, Caribbean Pineapple, Limette, Ananas, Chili, Tajín-Hawaii Salzrand<br/>
+                                                <strong>Als Mezcalita mit Mezcal</strong> | 1.50€
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-item">
-                            <h2>Cocktails</h2>
-                            <p></p>
+                        <div id="cocktails" class="menu-item">
+                            <h2>Cocktails CLÁSICOS</h2>
+                            <p><small>*Auch als Virgin Cocktail erhältlich</small></p>
                             <div class="products-wrapper">
                                 <div class="product-item">
                                     <div class="menu-title">
@@ -149,20 +153,20 @@
                                 </div>
                                 <div class="product-item">
                                     <div class="menu-title">
-                                        <span class="product-title">Tlaloc</span>
+                                        <span class="product-title">TEQUILA SUNRISE </span>
                                         <div class="product-price">| 9.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Blue Curaçao, Framboise De Ronce, Limettensaft, Grenadine</span></div>
+                                        <div class="menu-description"><span>Tequila Silver, Limette, Orange, Mango, Grenadine</span></div>
                                     </div>
                                 </div>
                                 <div class="product-item">
                                     <div class="menu-title">
-                                        <span class="product-title">Sangre Mexicana</span>
-                                        <div class="product-price">| 9.90€</div>
+                                        <span class="product-title">Piña Colada *</span>
+                                        <div class="product-price">| 10.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Bulleit Bourbon, Mezcal Joven, Agua De Jamaica, Limettensaft, Agavendicksaft</span></div>
+                                        <div class="menu-description"><span>Weißer Rum, Malibú, Caribbean Pineapple, Kokosnuss, Limette, Ananas</span></div>
                                     </div>
                                 </div>
                                 <div class="product-item">
@@ -171,667 +175,676 @@
                                         <div class="product-price">| 9.90€</div>
                                     </div>
                                     <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Pisco, Limettensaft, Zucker, Eiweiß</span><small class="product-additives"> C</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mezcaloni</span>
-                                        <div class="product-price">| 9.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Mezcal Joven, Campari, Vermouth Rosso</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Whiskey Sour</span>
-                                        <div class="product-price">| 10.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Bulleit Bourbon, Zitronensaft, Limettensaft, Falernum, Zucker</span><small class="product-additives"> C</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Piña Colada</span>
-                                        <div class="product-price">| 10.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Bacardi Blanco, Malibú, Ananassaft, Coconut Cream</span></div>
+                                        <div class="menu-description"><span>Pisco, Limette, Eiweiß, Angostura</span><small class="product-additives"> C</small></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-item">
-                            <h2>Alkoholfreie Cocktails</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">México Mágico</span>
-                                        <div class="product-price">| 6.50€</div>
+                            <div id="alkoholfreieCocktails" class="menu-item">
+                                <h2>Alkoholfreie Cocktails</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">México Mágico</span>
+                                            <div class="product-price">| 7.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Orangensaft, Ananassaft, Limettensaft, Grenadine</span></div>
+                                        </div>
                                     </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Orangensaft, Ananassaft, Limettensaft, Grenadine</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Ipanema</span>
-                                        <div class="product-price">| 6.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Limettenwürfel, Ginger Ale, Rohrzucker</span><small class="product-additives"> 2</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Virgin Colada</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Ananassaft, Coconut Cream und Ananas</span><small class="product-additives"> 1</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Violeta</span>
-                                        <div class="product-price">| 7.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Siegfried Wonderlauf Alkoholfrei, Zitronensaft, Eiweiß, Monin Violet, Sodawassser</span><small class="product-additives"> c</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Gin Tonic Virgin</span>
-                                        <div class="product-price">| 7.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Siegfried Wonderlauf Alkoholfrei, Tonic Water</span><small class="product-additives"> 10</small></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Highballs</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Paloma</span>
-                                        <div class="product-price">| 9.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Limettensaft, Pink Grapefruit, Jamaica Salzrand (wahlweise mit Mezcal)</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">El Diablo</span>
-                                        <div class="product-price">| 9.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Ron Prohibido, Limettensaft, Ginger Ale</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mexico Mule</span>
-                                        <div class="product-price">| 9.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Limettensaft, Ginger Ale, Gurke, Angostura (wahlweise mit Wodka)</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Tequila Sunrise</span>
-                                        <div class="product-price">| 9.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tequila Blanco, Triple Sec, Limettensaft, Orangensaft, Grenadine</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Gin Tonic</span>
-                                        <div class="product-price">| 9.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
-                                            <span>
-                                                Bombay Sapphire, Tonic Water<br />
-                                                Hendricks | +1.00€<br />
-                                                Gin Monkey 47 | +1.00€<br />
-                                                Gin Sul | + 1.50€
-                                            </span>
-                                            <small class="product-additives"> 10</small>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Ipanema</span>
+                                            <div class="product-price">| 7.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Limettenwürfel, Ginger Ale</span><small class="product-additives"> 2</small></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Cervezas</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Corona Extra - Cerveza Mexicana</span><small class="product-additives"> A, 2, 3</small><span class="product-mark">4.5% 355ml</span>
-                                        <div class="product-price">| 4.50€</div>
+                            <div id="highballs" class="menu-item">
+                                <h2>Highballs</h2>
+                                <p><small>**Auch als Virgin Longdrink ohne Alkohol erhältlich</small></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Paloma **</span>
+                                            <div class="product-price">| 9.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Tequila Blanco, Limettensaft, Pink Grapefruit, Jamaica Salzrand (wahlweise mit Mezcal)</span></div>
+                                        </div>
                                     </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">CHELADA</span><span class="product-mark">4.5% 355ml</span>
-                                        <div class="product-price">| 6.20€</div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Moscow Mule</span>
+                                            <div class="product-price">| 9.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    Tequila Blanco, Limettensaft, Ginger Ale, Gurke, Angostura (wahlweise mit Wodka)<br/>
+                                                    Grey Goose | + 1.50€
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Corona mit Limettensaft und Himalaya Salz</span><small class="product-additives"> A, 2, 3</small></div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Skinny Bitch</span>
+                                            <div class="product-price">| 9.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Vodka, Limette<br/>Grey Goose | + 1,50€</span></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">MICHELADA</span><span class="product-mark">4.5% 355ml</span>
-                                        <div class="product-price">| 6.40€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Corona mit Limettensaft, Sangrita und Holy Spices</span><small class="product-additives"> A, 2, 3</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Ratsherrn Pilsner</span><span class="product-mark">5,9% 400ml</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>VOM FASS.</span><small class="product-additives"> A, 3</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Ratsherrn Zwickel</span><span class="product-mark">5,2% 400ml</span>
-                                        <div class="product-price">| 4.30€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>VOM FASS.</span><small class="product-additives"> A, 3</small></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">RATSHERRN PALE ALE</span><span class="product-mark">5,6% 330ml</span><small class="product-additives"> A, 3</small>
-                                        <div class="product-price">| 4.50€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">ALSTER</span><span class="product-mark">400ml</span><small class="product-additives"> A, 3</small>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Warsteiner Alkoholfrei</span><small class="product-additives"> A, 3</small><span class="product-mark">330ml</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Vino Blanco</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Johannes Balzhäuser 9. Generation</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Weißburgunder, trocken, Rheinhessen</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.50€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 23.00€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Quai</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Grauburgunder, trocken, Rheinhessen</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.50€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 23.00€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Wechsler</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Riesling, trocken, Rheinhessen</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 25.00€</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Vino Rosado</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Reichsrat Von Buhl Dry Rosé</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Spätburgunder, trocken</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 25.00€</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Vino Tinto</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Marcel Malbec</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Malbec, trocken, Cahors (Frankreich)</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.50€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 23.00€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Capçanes Mas Collet</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Cabernet Sauvignon, Tempranillo, trocken, Montsant (Spanien)</span><small class="product-additives"> L</small></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">750ml</span>
-                                        <div class="product-price">| 25.00€</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Tequilas 2cl</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">El Jimador</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Blanco oder Reposado</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">José Cuervo Tradicional</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Reposado.</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">José Cuervo 1800</span>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
-                                            <span>
-                                                <strong>Blanco</strong> | 4.50€<br />
-                                                <strong>Reposado</strong> | 4.90€<br />
-                                                <strong>Añejo</strong> | 5.50€
-                                            </span>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Gin Tonic **</span>
+                                            <div class="product-price">| 9.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    Bombay Sapphire, Tonic Water<br />
+                                                    Hendricks | +1.00€<br />
+                                                    Gin Monkey 47 | +1.00€<br />
+                                                    Gin Sul | + 1.50€
+                                                </span>
+                                                <small class="product-additives"> 10</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Arette (unser Tequila De La Casa) </span>
-                                        <div class="product-price">| 4.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
+                            </div>
+                            <div id="cervezas" class="menu-item">
+                                <h2>Cervezas</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Corona Extra</span><small class="product-additives"> A, 2, 3</small><span class="product-mark">4.5% 355ml</span>
+                                            <div class="product-price">| 4.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
                                             <span>
-                                                <strong>Blanco</strong> | 4.90€<br />
-                                                <strong>Reposado</strong> | 5.20€
+                                                Cerveza Mexicana
                                             </span>
                                         </div>
                                     </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">CHELADA</span><span class="product-mark">4.5% 355ml</span>
+                                            <div class="product-price">| 6.20€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Corona mit Limettensaft und Himalaya Salz</span><small class="product-additives"> A, 2, 3</small></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">MICHELADA</span><span class="product-mark">4.5% 355ml</span>
+                                            <div class="product-price">| 6.70€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Corona mit Limettensaft, Sangrita und Holy Spices</span><small class="product-additives"> A, 2, 3</small></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Ratsherrn Pilsner</span><span class="product-mark">5,9% 400ml</span>
+                                            <div class="product-price">| 3.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>VOM FASS.</span><small class="product-additives"> A, 3</small></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Ratsherrn Zwickel</span><span class="product-mark">5,2% 400ml</span>
+                                            <div class="product-price">| 4.30€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>VOM FASS.</span><small class="product-additives"> A, 3</small></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">RATSHERRN PALE ALE</span><span class="product-mark">5,6% 330ml</span><small class="product-additives"> A, 3</small>
+                                            <div class="product-price">| 4.50€</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">RATSHERRN ALKOHOLFREI</span><small class="product-additives"> A</small><span class="product-mark">330ml</span>
+                                            <div class="product-price">| 4.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">CORONA Alkoholfrei</span><small class="product-additives"> A, 2, 3</small><span class="product-mark">355ml</span>
+                                            <div class="product-price">| 4.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
                                 </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Herradura</span>
-                                        <div class="product-price">| 4.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Reposado</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Don Julio</span>
-                                        <div class="product-price">| 5.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
-                                            <span>
-                                                <strong>Blanco</strong> | 5.90€<br />
-                                                <strong>Reposado</strong> | 6.20€<br />
-                                                <strong>Añejo</strong> | 6.90€
-                                            </span>
+                            </div>
+                            <div id="vinoBlanco" class="menu-item">
+                                <h2>Vino Blanco</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title"><span class="product-title">Quai (Rheinhessen)</span></div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Grauburgunder, trocken</span><small class="product-additives"> L</small></div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">200ml</span>
+                                            <div class="product-price">| 7.50€</div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">750ml</span>
+                                            <div class="product-price">| 24.90€</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Maestro Dobel Diamante</span>
-                                        <div class="product-price">| 8.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Reposado</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Reserva De La Familia</span>
-                                        <div class="product-price">| 9.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Añejo</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Tequila Tasting</span>
-                                        <div class="product-price">| 12.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Drei verschiedene Sorten Tequila: Blanco, Reposado &amp; Añejo</span></div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Mezcales 2cl</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Alipús</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
-                                            <span>
-                                                <strong>Santa Ana del Rio</strong>: 100% Espadin Agave, dezenter Rauch mit etwas Süße und Mineralität<br />
-                                                <strong>San Juan del Rio</strong>: 100% Espadin Agave, rauchig, mineralisch, herb, mit feinen Fruchtnoten<br />
-                                                <strong>San Baltazar</strong>: 100% Espadin Agave, Citrusaromen, Ananas, leicht herb, mit Rauch und Kräutern
-                                            </span>
+                            <div id="vinoRosado" class="menu-item">
+                                <h2>Vino Rosado</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title"><span class="product-title">Reichsrat Von Buhl Dry Rosé</span></div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Spätburgunder, trocken</span><small class="product-additives"> L</small></div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">200ml</span>
+                                            <div class="product-price">| 8.90€</div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">750ml</span>
+                                            <div class="product-price">| 29.90€</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Encantado</span>
-                                        <div class="product-price">| 4.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Espadin Agave, mineralisch, mittlere Rauchigkeit</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Los Danzantes</span>
-                                        <div class="product-price">| 6.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Leicht rauchige Süße, Vanille, Karamel, Dunkle Schokolade, Leder</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Real Minero</span>
-                                        <div class="product-price">| 6.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Barril &amp; Cuishe Agave, Tropische Früchte, leichte Süße, kaum Rauch</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mezcal Tasting</span>
-                                        <div class="product-price">| 12.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Drei verschiedene Sorten Mezcal: Joven, Reposado und Añejo</span></div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Shots 2cl</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mexikaner</span>
-                                        <div class="product-price">| 3.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tomatensaft, Sangrita Picante, Wodka, Tabasco, Pfeffer, Salz</span></div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Bandera</span>
-                                        <div class="product-price">| 5.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>3 Shots á 2cl in Mexikos Nationalfarben: Grün (Limettensaft), Weiß (Tequila) und Rot (Sangrita)</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>Softdrinks</h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Limonada De La Casa</span><span class="product-mark">400ml</span>
-                                        <div class="product-price">| 4.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Agua De Jamaica</span><span class="product-mark">400ml</span>
-                                        <div class="product-price">| 4.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Maracujaschorle</span></div>
-                                    <div class="menu-description-wrapper"></div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 2.90€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">400ml</span>
-                                        <div class="product-price">| 3.90€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title"><span class="product-title">Agua</span></div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Tafelwasser (still oder laut)</span></div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">200ml</span>
-                                        <div class="product-price">| 1.00€</div>
-                                    </div>
-                                    <div class="product-size">
-                                        <span class="product-mark">1000ml</span>
-                                        <div class="product-price">| 4.00€</div>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Coca-Cola Classic</span><small class="product-additives"> 2, 3, 11</small><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 3.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Coca-Cola Zero</span><small class="product-additives"> 2, 3, 5, 6, 7, 9, 11</small><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 3.60€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Fanta</span><small class="product-additives"> 2, 3</small><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 2.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Mezzo Mix</span><small class="product-additives"> 2, 3, 11</small><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 2.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Vio Apfelschorle</span><span class="product-mark">300ml</span>
-                                        <div class="product-price">| 3.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Vio Rhabarberschorle</span><span class="product-mark">300ml</span>
-                                        <div class="product-price">| 3.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Ginger Ale</span><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 3.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Pink Grapefruit</span><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 3.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Tonic Water</span><span class="product-mark">200ml</span>
-                                        <div class="product-price">| 3.50€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <h2>
-                                Café
-                                <img class="costa-logo" src="./media/costa-coffee-logo.svg" alt="Costa Coffee Logo" />
-                            </h2>
-                            <p></p>
-                            <div class="products-wrapper">
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Espresso</span>
-                                        <div class="product-price">| 2.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Doppelter Espresso</span>
-                                        <div class="product-price">| 3.80€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Americano</span>
-                                        <div class="product-price">| 2.90€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Cappuccino</span>
-                                        <div class="product-price">| 3.20€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper"></div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Latte Macchiato</span>
-                                        <div class="product-price">| 3.60€</div>
-                                    </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description">
-                                            <span>
-                                                Vanille | +0.50€<br />
-                                                Amaretto / Baileys / Kahlúa | +0.90€
-                                            </span>
+                            <div id="vinoTinto" class="menu-item">
+                                <h2>Vino Tinto</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title"><span class="product-title">Marcel Malbec (Cahors, Frankreich)</span></div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Malbec, trocken</span><small class="product-additives"> L</small></div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">200ml</span>
+                                            <div class="product-price">| 9.50€</div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">750ml</span>
+                                            <div class="product-price">| 34.90€</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-item">
-                                    <div class="menu-title">
-                                        <span class="product-title">Tee</span>
-                                        <div class="product-price">| 2.20€</div>
+                            </div>
+                            <div id="tequila" class="menu-item">
+                                <h2>Tequilas 2cl</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">José Cuervo</span>
+                                            <div class="product-price">| 3.70€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Especial Silver</strong> | 3.70€<br/>
+                                                    <strong>Especial Gold</strong> | 3.90€<br/>
+                                                    <strong>Traditional Reposado</strong> | 4.20€ 
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="menu-description-wrapper">
-                                        <div class="menu-description"><span>Verschiedene Sorten</span></div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">José Cuervo 1800</span>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 4.90€<br />
+                                                    <strong>Reposado</strong> | 5.50€<br />
+                                                    <strong>Añejo</strong> | 5.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">J.C. MAESTRO DOBEL DIAMANTE</span>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Reposado </strong> | 7.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">J.C. RESERVA DE LA FAMILIA</span>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Añejo </strong> | 12.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">OLMECA</span>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 4.50€<br />
+                                                    <strong>Altos Plata</strong> | 5.20€<br />
+                                                    <strong>Altos Reposado</strong> | 5.50€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Arette (unser Tequila De La Casa) </span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 4.90€<br />
+                                                    <strong>Reposado</strong> | 5.40€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">CALLE 23</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 5.30€<br />
+                                                    <strong>Reposado</strong> | 5.70€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">CORRALEJO</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 4.90€<br />
+                                                    <strong>Reposado</strong> | 5.50€<br />
+                                                    <strong>Añejo</strong> | 5.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Herradura</span>
+                                            <div class="product-price">| 4.70€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Plata</strong> | 4.70€<br />
+                                                    <strong>Reposado</strong> | 4.90€<br />
+                                                    <strong>Añejo</strong> | 5.50€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Don Julio</span>
+                                            <div class="product-price">| 6.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 6.50€<br />
+                                                    <strong>Reposado</strong> | 6.90€<br />
+                                                    <strong>Añejo</strong> | 7.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">PATRÓN</span>
+                                            <div class="product-price">| 6.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Silver</strong> | 6.50€<br />
+                                                    <strong>Reposado</strong> | 7.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">TEQUILA TASTING DE LA CASA</span>
+                                            <div class="product-price">| 13.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>José Cuervo 1800 Blanco, Reposado & Añejo</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">LUCHA LIBRE – PATRÓN vs. DON JULIO TEQUILA TASTING</span>
+                                            <div class="product-price">| 11.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco/Silver</strong> | 11.90€<br />
+                                                    <strong>Reposado</strong> | 13.90€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">TEQUILA TASTING DELUXE </span>
+                                            <div class="product-price">| 19.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Don Julio: Blanco, Reposado & Añejo</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mezcales" class="menu-item">
+                                <h2>Mezcales 2cl</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Encantado</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Espadin Agave, mineralisch, mittlere Rauchigkeit</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Alipús</span>
+                                            <div class="product-price">| 5.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Santa Ana del Rio</strong>: 100% Espadin Agave, dezenter Rauch mit etwas Süße und Mineralität<br />
+                                                    <strong>San Juan del Rio</strong>: 100% Espadin Agave, rauchig, mineralisch, herb, mit feinen Fruchtnoten<br />
+                                                    <strong>San Baltazar</strong>: 100% Espadin Agave, Citrusaromen, Ananas, leicht herb, mit Rauch und Kräutern
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Los Danzantes</span>
+                                            <div class="product-price">| 5.60€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Blanco</strong> | 5.60€<br/>
+                                                    <strong>Reposado</strong> | 5.90€<br/>
+                                                    <strong>Añejo</strong> | 6.50€<br/>
+                                                    Leicht rauchige Süße, Vanille, Karamel, Dunkle Schokolade, Leder
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Real Minero</span>
+                                            <div class="product-price">| 6.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Barril &amp; Cuishe Agave, Tropische Früchte, leichte Süße, kaum Rauch</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Mezcal Tasting - LA FAMILIAS</span>
+                                            <div class="product-price">| 13.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Drei verschiedene Sorten Mezcal: Joven, Reposado und Añejo</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">MEZCAL TASTING DELUXE </span>
+                                            <div class="product-price">| 15.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Los Danzantes Mezcales: Blanco, Reposado und Añejo</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="shots" class="menu-item">
+                                <h2>Shots 2cl</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Vodka</span>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description">
+                                                <span>
+                                                    <strong>Standard</strong> | 3.50€<br/>
+                                                    <strong>Grey Goose</strong> | 4.70€
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Mexikaner</span>
+                                            <div class="product-price">| 3.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Tomatensaft, Sangrita Picante, Wodka, Tabasco, Pfeffer, Salz</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Bandera</span>
+                                            <div class="product-price">| 6.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>3 Shots á 2cl in Mexikos Nationalfarben: Grün (Limettensaft), Weiß (Tequila) und Rot (Sangrita)</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="softdrinks" class="menu-item">
+                                <h2>Softdrinks</h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Limonada De La Casa</span><span class="product-mark">400ml</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Agua De Jamaica</span><span class="product-mark">400ml</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title"><span class="product-title">Schorlen - Maracuja / Ananas / Mango</span></div>
+                                        <div class="menu-description-wrapper"></div>
+                                        <div class="product-size">
+                                            <span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">400ml</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title"><span class="product-title">Agua</span></div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Tafelwasser (still oder laut)</span></div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">200ml</span>
+                                            <div class="product-price">| 1.50€</div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span class="product-mark">1000ml</span>
+                                            <div class="product-price">| 4.90€</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Coca-Cola Classic</span><small class="product-additives"> 2, 3, 11</small><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.20€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Coca-Cola Zero</span><small class="product-additives"> 2, 3, 5, 6, 7, 9, 11</small><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.60€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Fanta</span><small class="product-additives"> 2, 3</small><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.20€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Anjola Bio-Ananas-Limetten-Limonade</span><span class="product-mark">300ml</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Vio Apfelschorle</span><span class="product-mark">300ml</span>
+                                            <div class="product-price">| 3.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Vio Rhabarberschorle</span><span class="product-mark">300ml</span>
+                                            <div class="product-price">| 3.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Thomas Henry Ginger Ale</span><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Thomas Henry Pink Grapefruit Soda</span><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Thomas Henry Tonic Water</span><span class="product-mark">200ml</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="cafe" class="menu-item">
+                                <h2>
+                                    Café
+                                    <img class="costa-logo" src="./media/costa-coffee-logo.svg" alt="Costa Coffee Logo" />
+                                </h2>
+                                <p></p>
+                                <div class="products-wrapper">
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Espresso</span>
+                                            <div class="product-price">| 2.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Americano</span>
+                                            <div class="product-price">| 2.90€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Cappuccino</span>
+                                            <div class="product-price">| 3.50€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper"></div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Latte Macchiato</span>
+                                            <div class="product-price">| 3.90€</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-item">
+                                        <div class="menu-title">
+                                            <span class="product-title">Tee</span>
+                                            <div class="product-price">| 2.20€</div>
+                                        </div>
+                                        <div class="menu-description-wrapper">
+                                            <div class="menu-description"><span>Verschiedene Sorten</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -839,7 +852,7 @@
                     </div>
                 </div>
             </div>
-            <a href="./index-en.html" class="menuSwitch"><img src="./media/taco.svg" alt="Tacos" /></a>
+            <a href="./index.html" class="menuSwitch"><img src="./media/taco.svg" alt="Tacos" /></a>
         </div>
         <footer class="main-footer">
             <div class="container">
@@ -910,6 +923,8 @@
         </footer>        
     </main>
     <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="LyXfqQU2X"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-2.2.4.min.js"></script>
     <script src="./js/masonry.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
